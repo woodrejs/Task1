@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Montserrat";
+
+  scrollbar-color: $grey $bck;
+  scrollbar-width: thin;
+}
+.container {
+  width: 100%;
+  background-color: $bck;
+}
+.box {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,10 @@
+/* ---media--- */
+@media screen and (max-width: 991px) {
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: calc(100% - 15px);
+  }
+}
