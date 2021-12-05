@@ -1,4 +1,6 @@
 import { isActive as uniqueNumbers } from "./toggler.main";
+import { openModal } from "./modal.handlers";
+import gsap from "gsap";
 //nodes
 const button = document.getElementById("mainBtn");
 const evenCol = document.getElementById("evenCol");
@@ -21,6 +23,12 @@ button.addEventListener("click", () => {
   displayNumbers(oddCol, odd);
 
   openModal();
+});
+button.addEventListener("mouseenter", () => {
+  gsap.to(button, { duration: 0.3, opacity: 0.8 });
+});
+button.addEventListener("mouseout", () => {
+  gsap.to(button, { duration: 0.3, opacity: 1 });
 });
 
 //functions
@@ -69,8 +77,4 @@ function displayNumbers(node, arr) {
   arr.forEach((el) => {
     node.innerHTML += `<div class="modal__table__cell">${el}</div>`;
   });
-}
-function openModal() {
-  const modal = document.getElementById("modal");
-  modal.style.display = "flex";
 }

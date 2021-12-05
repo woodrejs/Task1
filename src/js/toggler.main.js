@@ -1,3 +1,5 @@
+import gsap from "gsap";
+
 //nodes
 const switchBtn = document.getElementById("switch");
 const toggler = document.getElementById("toggler");
@@ -5,8 +7,6 @@ const toggler = document.getElementById("toggler");
 export let isActive = false;
 
 switchBtn.addEventListener("click", () => {
-  const shift = isActive ? 30 : 0;
-
-  toggler.style.transform = `translateX(${shift}px)`;
+  gsap.to(toggler, { duration: 0.3, x: isActive ? 30 : 0 });
   isActive = !isActive;
 });

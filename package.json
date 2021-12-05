@@ -14,7 +14,9 @@
     },
     "author": "",
     "license": "MIT",
-    "dependencies": {},
+    "dependencies": {
+        "gsap": "^3.8.0"
+    },
     "devDependencies": {
         "@babel/core": "^7.15.8",
         "@babel/plugin-transform-runtime": "^7.15.8",
