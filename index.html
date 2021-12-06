@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task I - Przeglądarka</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="container">
+        <div class="box">
+          <!-- header section -->
+          <header class="header">
+            <div class="header__box">
+              <h1 class="header__box__title">zadanie I</h1>
+              <h3 class="header__box__subTitle">przeglądarka</h3>
+            </div>
+          </header>
+          <!-- main section -->
+          <main class="main">
+            <section class="main__box">
+              <button id="mainBtn" class="main__box__btn shadow">wylosuj</button>
+              <div class="switchBox">
+                <div id="switch" class="switchBox__switch shadow">
+                  <div id="toggler" class="switchBox__switch__toggler">
+                    <div class="switchBox__switch__sphere"></div>
+                  </div>
+                </div>
+                <span class="switchBox__text">niepowtarzalne liczby</span>
+              </div>
+            </section>
+          </main>
+          <!-- footer section -->
+          <footer class="footer">
+            <aside class="footer__author">maciej szczepański</aside>
+          </footer>
+        </div>
+      </div>
+      <!-- result modal -->
+      <div id="modal" class="modal__mask">
+        <article class="modal shadow">
+          <h3 class="modal__title">wynik</h3>
+          <div class="modal__table">
+            <header class="modal__table__headerBox">
+              <h3 class="modal__table__header">parzyste</h3>
+              <h3 class="modal__table__header">nieparzyste</h3>
+            </header>
+            <div class="modal__table__box">
+              <div id="evenCol" class="modal__table__col"></div>
+              <div id="oddCol" class="modal__table__col"></div>
+            </div>
+          </div>
+          <button id="modalBtn" class="modal__btn shadow">zamknij</button>
+        </article>
+      </div>
+    </div>
+    <script src="./bundle.js"></script>
+  </body>
+</html>
