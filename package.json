@@ -5,8 +5,8 @@
   "description": "Task I - Przeglądarka",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run dist",
+    "deploy": "gh-pages -d dist",
     "build": "npm run clean && npm run lint && npm run dist",
     "dist": "webpack --config webpack.prod.js",
     "start": "webpack serve --config webpack.dev.js",
